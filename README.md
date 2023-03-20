@@ -20,4 +20,10 @@ Error handling is incorporated using HTTPException from FastApi.
 
 The models file includes the instructions for creating the tables, and the schema file is included to make data handling easier.
 
+One good thing about the database schema is that it is easy and intuitive to follow. That being said, we can probably develop a more efficient schema to reduce API calls given that 'all' paramaters are a superset of 'wind', 'temperature' and 'misc'.
+
+Further additions can be made to encrypt the API keys/provide a sample config file instead of exposing private credentials.
+
+Also, a few data validation functions are present, but more can be added to ensure integrity of the data received from the Meteomatics API prior to storing it in the database.
+
 Hope you enjoy playing around with the API!
